@@ -1,0 +1,96 @@
+
+
+.mainSquare{
+background-color: #ee4a0e;
+color:yellow;
+font-size: 30px;
+border:solid 2px red;
+border-radius: 20px;
+width:600px;
+height:1200px;
+margin-left:auto;
+margin-right:auto;
+display: flex;
+flex-wrap: wrap;
+align-content: flex-start; 
+}
+
+.mainSquare_text{
+  font-size: 20px;
+  color: lightskyblue;
+  background-color: lightgreen;
+  border:dashed 2px yellowgreen;
+  border-radius:10px;
+  margin:10px;
+  padding:10px;
+  width:250px;
+  height:600px;
+  display:flex;
+  flex-direction: column;
+}
+
+.mainSquare_p{
+  font-size: 20px;
+  color: lightskyblue;
+  background-color: rgb(155, 165, 155);
+  border:dotted 2px red;
+  border-radius:10px;
+  margin:10px;
+  padding:10px;
+  width:540px;
+  height:400px;
+}
+
+.mainSquare_radios{
+  font-size: 16px;
+  color: lightskyblue;
+  background-color: lightgreen;
+  border:solid 2px fuchsia;
+  border-radius:10px;
+  margin:10px;
+  padding:10px;
+  width:250px;
+  height:600px;
+  display:flex;
+  flex-direction: column;
+
+}
+
+  input[type=text]{
+  padding: 10px; /* Поля */
+  box-sizing: border-box; /* Алгоритм расчёта ширины */ 
+  box-shadow: inset 0 1px 5px rgba(0,0,0,0.2); /* Тень внутри */
+  border: 1px solid #ccc; /* Параметры рамки */
+  color: #ee4a0e; /* Цвет текста */
+  }
+
+  input[type=button]{
+    width: 230px;
+    height:40px;
+    margin:10px;
+    padding:10px;
+    background: yellow; 
+  }
+
+  button{
+    width: 230px;
+    height:70px;
+    margin:10px;
+    padding:10px;
+    background: pink; 
+  }
+
+  input[type=image]{
+    width: 80px;
+    height:80px;
+    margin:10px;
+    padding:10px;
+    align-self:center;
+  }
+
+
+  .ht{
+    color:red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+  }

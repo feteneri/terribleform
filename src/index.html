@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<link rel="stylesheet" href="styles/style.css" />
+<!---------------------------Начало скриптовой части HTML-документа-->
+  <script>
+    
+/*                          Начало функции, собирающей данные формы*/
+    function writer(){
+      var b;
+     var q=document.querySelector('.chk').checked;
+      if (q === true){
+        b="галочка есть"
+      }
+      else {b="галочки нет"}
+      var a="Полученные данные: "+document.perfecto.firstText.value+" "+document.perfecto.secondText.value+" "+
+      document.perfecto.thirdText.value+" "+document.perfecto.firstDate.value+" "+document.perfecto.secret.value+document.perfecto.Points.value+" "+b;
+      alert(a);
+    }
+/*                          Конец функции, собирающей данные формы*/
+  </script>
+<!----------------------------Конец скриптовой части HTML-документа-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Очень плохая форма</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!----------------------------Начало самого большого прямоугольника-->
+  <form name="perfecto" class="mainSquare">
+    <p>Очень вырвиглазная и страшная форма</p>
+<!------------------------------Начало прямоугольника с текстовыми полями----------->
+      <div class="mainSquare_text">
+        <p>Введите первый параметр</p>
+        <input type ="text" name="firstText" placeholder="Введите первый параметр" class="rrr">
+        <p>Введите второй параметр</p>
+        <input type ="text" name="secondText" placeholder="Введите второй параметр">
+        <p>Введите третий параметр</p>
+        <input type ="text" name="thirdText" placeholder="Введите третий параметр">
+        <p>Введите дату рождения Л.И.Брежнева</p> 
+        <input type="date" name="firstDate">
+        <p>Введите секретнейший набор символов</p>
+        <input type="password" name="secret">
+      </div>
+<!------------------------------Конец прямоугольника с текстовыми полями----------->
+
+<!----------------------------------------------------------------------------------------------->
+<div class="mainSquare_radios">
+    <p>Каравай, каравай, кого хочешь - выбирай!</p>
+    <label><input type="radio" name="Points" value="0">Вариант 1</label>
+    <label><input type="radio" name="Points" value="1">Вариант 2</label>
+    <label><input type="radio" name="Points" value="2">Вариант 3</label>
+    <label><input type="radio" name="Points" value="3">Вариант 4</label>
+    <label><input type="radio" name="Points" value="4">Вариант 5</label>
+    <label><input type="checkbox" name="dontknow" class="chk">Это не точно!</label>
+
+    <p>Тут кнопульки</p>
+    <input type="button" name="deleteAll" value="Кнопка" onClick="writer();">
+    <button><img src="img/1.png"><p>Кнопка с картинкой</p></button> <!--Картинки можно посмотреть здесь https://icons8.com-->
+    <input type=image name="delete" src="img/2.png">
+    <input type="submit">
+</div>  
+
+<div class="mainSquare_p">
+  <h1>Здесь просто текст</h1>
+  <p>В этом окне нужно поэкспериментировать с оформлением текста. Например, выделив необходимую часть текста в тег <span class="ht">span</span>, можно
+  задавать для этого текста собственное отличное от остального оформление.<br>
+  Тег <b>b</b> - полужирное начертание <br>
+  Тег <i>i</i> - курсив <br>
+  Тег <ins>ins</ins> - подчеркивание <br>
+  Тег <del>del</del> - зачеркивание <br>
+  Тег <sub>sub</sub> - нижний индекс<br>
+  Тег <sup>sup</sup> - верхний индекс<br>
+</p>
+  </form>
+  </div>
+  <!----------------------------Конец самого большого прямоугольника-->
+</body>
+</html>
