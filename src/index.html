@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <link rel="stylesheet" href="styles/style.css" />
-<!---------------------------Начало скриптовой части HTML-документа-->
+
   <script>
     
-/*                          Начало функции, собирающей данные формы*/
     function writer(){
       var b;
      var q=document.querySelector('.chk').checked;
@@ -16,9 +15,8 @@
       document.perfecto.thirdText.value+" "+document.perfecto.firstDate.value+" "+document.perfecto.secret.value+document.perfecto.Points.value+" "+b;
       alert(a);
     }
-/*                          Конец функции, собирающей данные формы*/
+    
   </script>
-<!----------------------------Конец скриптовой части HTML-документа-->
 
 <head>
   <meta charset="UTF-8">
@@ -26,10 +24,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!----------------------------Начало самого большого прямоугольника-->
+
   <form name="perfecto" class="mainSquare">
     <p>Очень вырвиглазная и страшная форма</p>
-<!------------------------------Начало прямоугольника с текстовыми полями----------->
+
       <div class="mainSquare_text">
         <p>Введите первый параметр</p>
         <input type ="text" name="firstText" placeholder="Введите первый параметр" class="rrr">
@@ -42,9 +40,7 @@
         <p>Введите секретнейший набор символов</p>
         <input type="password" name="secret">
       </div>
-<!------------------------------Конец прямоугольника с текстовыми полями----------->
 
-<!----------------------------------------------------------------------------------------------->
 <div class="mainSquare_radios">
     <p>Каравай, каравай, кого хочешь - выбирай!</p>
     <label><input type="radio" name="Points" value="0">Вариант 1</label>
@@ -74,6 +70,6 @@
 </p>
   </form>
   </div>
-  <!----------------------------Конец самого большого прямоугольника-->
+
 </body>
 </html>
